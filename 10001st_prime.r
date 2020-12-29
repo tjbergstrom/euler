@@ -41,10 +41,10 @@ gaps <- tibble(Gap = primes[2:p] - primes[1:(p - 1)], PrimeGap = Gap %% 6 == 0) 
 
 ggplot(gaps, aes(factor(Gap), n, fill = PrimeGap)) +
     geom_col() +
-    scale_fill_manual(values = c( "#00b2b3", "#198e54"), name="PrimeGaps") +
+    scale_fill_manual(values = c( "#00b2b3", "#198e54"), name="gap%6==0") +
     theme_minimal(base_size = 10) + 
-    labs(title = "Frequency o  f prime gaps for the first 10,000 primes",
-        x = "Prime Gap",
+    labs(title = "Frequency of prime gaps for the first 10,000 primes",
+        x = "The gap between two successive prime numbers (Ex. gap between 11 & 13 is 2)",
         y = "Frequency")
         guide_legend(title="PrimeGaps")
 
