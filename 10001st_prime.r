@@ -48,7 +48,7 @@ ggplot(gaps, aes(factor(Gap), n, fill = PrimeGap)) +
         y = "Frequency")
         guide_legend(title="PrimeGaps")
 
-ggsave("10001st_prime.png", width=6, height=4)
+#ggsave("10001st_prime.png", width=6, height=4)
 
 
 
